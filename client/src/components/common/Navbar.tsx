@@ -13,7 +13,7 @@ function Navbar(props: { className?: string }) {
         <nav
           className={`${props.className} container mx-auto p-8 flex justify-between items-center`}
         >
-          <h1 className="logo-font">ReGULARISE</h1>
+          <h1 className="logo-font">SKILLFORGE</h1>
           <div className="flex gap-4">
             <Link to="/signin">
               <TextButton className="">SIGN IN</TextButton>
@@ -29,7 +29,7 @@ function Navbar(props: { className?: string }) {
         <nav
           className={`${props.className} container mx-auto p-8 flex justify-between items-center`}
         >
-          <h1 className="logo-font text-3xl max-md:text-2xl">ReGULARISE</h1>
+          <h1 className="logo-font text-3xl max-md:text-2xl">SkillForge</h1>
           <Timer />
         </nav>
       )}

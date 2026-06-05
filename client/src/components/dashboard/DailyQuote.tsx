@@ -4,7 +4,10 @@ import { useAuth } from "../context/AuthContext"
 
 export default function DailyQuote()
 {
-    const [quote,setQuote] = useState({author:"Abhay",quote:"Bhai API ni chalri quote wali"});
+    const [quote, setQuote] = useState({
+    author: "Atul Tripathi",
+    quote: "Track your progress, trust the process, and keep moving forward."
+    });
     const auth = useAuth()
     useEffect(()=>{
         auth?.APIFunctions.GetRequest("/quote",true).then((response:any)=>{

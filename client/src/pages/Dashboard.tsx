@@ -227,7 +227,7 @@ export default function Dashboard() {
                     src={`${
                       profileImage
                         ? profileImage
-                        : "https://s.yimg.com/ny/api/res/1.2/yaTedpbcw4UXmvfZFFKQJA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTgwMA--/https://media.zenfs.com/en/globenewswire.com/31aca83a1e85b36a57bd93da2fc4e624"
+                        : "https://api.dicebear.com/7.x/initials/svg?seed=Atul"
                     }`}
                     alt=""
                   />
