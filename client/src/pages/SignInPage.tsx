@@ -4,6 +4,7 @@ import Input from "../components/common/Input";
 import { useState, FormEvent } from "react";
 import { useAuth } from "../components/context/AuthContext";
 import { toast } from "react-toastify";
+import Logo from "../assets/logo1.png";
 
 export default function SignInPage() {
   const auth = useAuth();
@@ -40,12 +41,27 @@ export default function SignInPage() {
   return (
     // <section className="min-h-screen mx-auto container flex flex-col justify-center items-center">
     <section className="min-h-screen flex">
-      <div className="bg-primary grow pattern">
-
+      <div className="hidden md:flex md:w-1/2 bg-background flex-col items-center justify-center gap-8 p-8 text-center">
+        <div className="max-w-sm space-y-8">
+          <img src={Logo} alt="SkillForge" className="h-80 w-80 mx-auto" />
+          <div className="space-y-4">
+            <h1 className="text-4xl font-semibold text-white leading-tight">
+              Build Skills.
+              <br />
+              Stay Consistent.
+            </h1>
+            <p className="text-2xl font-medium text-white/80">
+              Forge Your Future.
+            </p>
+          </div>
+          <p className="text-sm italic text-white/60">
+            "Small daily improvements lead to remarkable results."
+          </p>
+        </div>
       </div>
-      <div className="flex flex-col justify-center items-center gap-8 h-screen w-full md:w-128">
-        <h1 className="text-2xl md:text-4xl font-bold">Sign in to your account</h1>
-        <form onSubmit={handleSubmit} action=''  className="p-2 md:p-8 flex flex-col gap-4 w-full">
+      <div className="w-full md:w-1/2 flex flex-col justify-center items-center gap-8 min-h-screen p-4 md:p-8 bg-background">
+          <h1 className="text-2xl md:text-4xl font-bold">Sign in to your account</h1>
+        <form onSubmit={handleSubmit} action='' className="p-2 md:p-8 flex flex-col gap-4 w-full">
           <Input
             className="w-full"
             placeHolder="example@website.com"

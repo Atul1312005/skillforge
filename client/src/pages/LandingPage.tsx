@@ -19,15 +19,18 @@ function LandingPage() {
   return (
     <>
       <Navbar className="z-10 relative" />
-      <div className="-mt-16 container mx-auto pb-24">
+      <div className="-mt-16 container mx-auto px-8 md:px-12 lg:px-20 pb-24">
         <section className="flex flex-col-reverse lg:flex-row items-center">
           <div className="w-full lg:w-1/2 p-8 lg:p-16">
             <h1 className="text-4xl md:text-7xl font-bold uppercase">
-              <span className="gradient-text">Regularise</span>
+              <span className="gradient-text">SKILLFORGE</span>
             </h1>
             <h1 className="text-1xl md:text-4xl font-medium">
-              Get Stuff Done.
+              Build Skills. Track Progress. Forge Your Future.
             </h1>
+            <p className="mt-8 opacity-90">
+              SkillForge is a habit and skill tracking platform designed to help you stay consistent, build productive routines, and achieve long-term growth through daily progress tracking.
+            </p>
             <div className="mt-4 md:mt-8 flex gap-4">
               <Link to="/signup">
                 <Button className="" color="primary">
@@ -74,13 +77,10 @@ function LandingPage() {
               What is
             </h1>
             <h1 className="text-4xl md:text-7xl font-bold uppercase">
-              <span className="gradient-text">Regularise?</span>
+              <span className="gradient-text">SKILLFORGE?</span>
             </h1>
             <p className="mt-8 opacity-90">
-              Regularise is a task management application that helps you to keep
-              track of your daily goals/habits. It helps you to maintain a daily
-              routine and keep track of your progress. It also provides you with
-              a heatmap of your daily activities.
+              SkillForge is a personal growth platform that helps users track skills, habits, and daily progress. It provides a structured way to stay consistent, monitor performance, and build long-term discipline through measurable progress.
             </p>
           </div>
         </section>
@@ -90,14 +90,10 @@ function LandingPage() {
               Consistency
             </h1>
             <h1 className="text-4xl md:text-7xl font-bold uppercase">
-              <span className="gradient-text">HEATMAPs</span>
+              <span className="gradient-text">HEATMAPS</span>
             </h1>
             <p className="mt-8 opacity-90">
-              The heatmap feature in Regularise helps you to keep track of your
-              daily activities. It provides you with a visual representation of
-              your daily activities. It helps you to maintain consistency in
-              your daily routine. It also helps you to identify the areas where
-              you need to improve.
+              The heatmap feature in SkillForge provides a visual representation of your daily activity and progress. It helps you identify patterns, maintain consistency, and stay motivated by tracking your growth over time.
             </p>
           </div>
           <img
